@@ -1,0 +1,17 @@
+/*--CUSTOM COLORS--*/
+.holo-primary {
+    background: #74CFE2;
+}
+
+
+.header {
+    height: 120px;
+}
+.navbar {
+    background: lightgrey;
+    padding: 0px;
+}
+main {
+    background: lightcyan;
+    min-height: 80vh;
+}
