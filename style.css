@@ -36,8 +36,8 @@ main.container img {
     }
 }
 
-/*--media screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
     main.container img {
         height: 480px;
     }
-}--*/
+}
