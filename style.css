@@ -16,15 +16,18 @@ h1 {
     height: 80px;
     padding: 0px;
 }
+.nav-colored {
+    background: #23c1fe;
+}
 .navbar a {
     color: white;
+    font-size: 20px;
 }
 .navbar a.nav-item {
-    width: 128px;
-    
+    width: 160px;
 }
 .navbar a.navbar-brand {
-    font-size: 24px;
+    font-size: 32px;
     font-weight: 500;
 }
 
@@ -36,6 +39,7 @@ h1 {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 33.33%;
+    background-attachment: fixed;
 }
 
 .hero .layer {
