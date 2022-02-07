@@ -9,27 +9,64 @@
 body {
     background: #7CD9FC;
 }
-.header {
-    height: 80px;
+h1 {
+    margin: 0px;
 }
 .navbar {
-    background: lightgrey;
+    height: 80px;
     padding: 0px;
 }
-
-div.container-fluid {
-    padding: 0px;
+.navbar a {
+    color: white;
+}
+.navbar a.nav-item {
+    width: 128px;
+    
+}
+.navbar a.navbar-brand {
+    font-size: 24px;
+    font-weight: 500;
 }
 
-.hero img {
+/*--FOR MOBILE DEVICES--*/
+.hero {
+    padding: 0px;
+    height: calc(40vh - 60px);
+    background: url("images/69926594_115750249817905_3396160275945095168_n.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 33.33%;
+}
+
+.hero .layer {
+    background-color: rgba(64, 64, 64, 0.5);
     width: 100%;
-    height: calc(50vh - 120px);
-    object-fit: cover;
-    object-position: 50% 33.33%;
+    height: 100%;
 }
 
+.hero .layer h1 {
+    font-size: 2em;
+}
+
+.main {
+    background: white;
+}
+
+/*--FOR LARGER DISPLAYS--*/
 @media screen and (min-width: 768px) {
-    .hero img {
-        height: calc(100vh - 120px);
+    .hero {
+        height: calc(50vh);
+    }
+    .hero .layer h1 {
+        font-size: 4em;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .hero {
+        height: calc(100vh);
+    }
+    .hero .layer h1 {
+        font-size: 6em;
     }
 }
