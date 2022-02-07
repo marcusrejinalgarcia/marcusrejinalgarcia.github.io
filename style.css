@@ -11,7 +11,8 @@
     background: lightgrey;
     padding: 0px;
 }
-main {
+main.container {
     background: lightcyan;
+    padding: 0px;
     min-height: 80vh;
 }
