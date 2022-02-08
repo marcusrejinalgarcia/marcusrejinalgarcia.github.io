@@ -9,12 +9,9 @@
 body {
     background: #7CD9FC;
 }
-h1 {
-    margin: 0px;
-}
+
 .navbar {
-    box-sizing: content-box;
-    height: 60px;
+    height: 80px;
     padding: 0px;
 }
 .nav-colored {
@@ -23,17 +20,17 @@ h1 {
 }
 .navbar a {
     color: white;
-    font-size: 16px;
+    font-size: 18px;
     text-align: center;
-}
-.navbar a.nav-item {
-    width: 130px;
     font-weight: 500;
+    padding: 16px;
 }
-.navbar a.navbar-brand {
+.navbar a.navbar-brand, button i {
+    color: white;
     font-size: 32px;
-    font-weight: 500;
-    margin: 0px;
+}
+.collapse {
+    height: 40px;
 }
 
 /*--FOR MOBILE DEVICES--*/
@@ -46,15 +43,17 @@ h1 {
     background-position: 50% 33.33%;
     background-attachment: fixed;
 }
-
 .hero .layer {
     background-color: rgba(64, 64, 64, 0.5);
     width: 100%;
     height: 100%;
 }
-
-.hero .layer h1 {
-    font-size: 2em;
+.hero .layer div:first-child {
+    visibility: hidden;
+}
+.hero .layer h1, i {
+    font-size: 3em;
+    color: white;
 }
 
 .main {
