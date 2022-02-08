@@ -44,12 +44,14 @@
                 <h1>Your One-Stop Shop for All Things Hololive!</h1>
             </div>
             <div>
-                <a href="#"><i class="bi bi-chevron-double-down"></i></a>
+                <button type="button" id="scroll-down" class="btn scroll-down">
+                    <i class="bi bi-chevron-double-down"></i>
+                </button>
             </div>
         </div>
     </div>
 
-    <main class="container main bg-white">
+    <main id="main-content" class="container main bg-white">
         <div class="row">
             <div class="col-md-6 col-text">
                 <h3>What is Hololive?</h3>
@@ -82,12 +84,16 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
+    <!--SMOOTHSCROLL-->
+    <script>window.SmoothScrollOptions = { animationTime: 500 }</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js" integrity="sha512-HaoDYc3PGduguBWOSToNc0AWGHBi2Y432Ssp3wNIdlOzrunCtB2qq6FrhtPbo+PlbvRbyi86dr5VQx61eg/daQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!--COLORED NAVBAR ON SCROLL DOWN-->
     <script>
+
         var navbar = document.getElementById('navbar');
         var navbaritems = document.getElementById('navbaritems');
         var navbarlinks = document.getElementsByClassName('nav-link');
-        let scrollHeight = window.innerHeight - 80;
+        let scrollHeight = window.innerHeight - 84;
         window.onscroll = function () { 
             "use strict";
             if (document.body.scrollTop >= scrollHeight || document.documentElement.scrollTop >= scrollHeight) {
@@ -107,7 +113,13 @@
                     }
             }
         };
-
+    </script>
+    <script>
+        var scrolldown = document.getElementById('scroll-down');
+        scrolldown.addEventListener('click', function() {
+            let scrollDistance = window.innerHeight - 84;
+            window.scrollBy(0, scrollDistance);
+        });
     </script>
 </body>
 
