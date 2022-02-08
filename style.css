@@ -13,28 +13,33 @@ h1 {
     margin: 0px;
 }
 .navbar {
-    height: 80px;
+    box-sizing: content-box;
+    height: 60px;
     padding: 0px;
 }
 .nav-colored {
     background: #23c1fe;
+    border-bottom: 4px solid white;
 }
 .navbar a {
     color: white;
-    font-size: 20px;
+    font-size: 16px;
+    text-align: center;
 }
 .navbar a.nav-item {
-    width: 160px;
+    width: 130px;
+    font-weight: 500;
 }
 .navbar a.navbar-brand {
     font-size: 32px;
     font-weight: 500;
+    margin: 0px;
 }
 
 /*--FOR MOBILE DEVICES--*/
 .hero {
     padding: 0px;
-    height: calc(40vh - 60px);
+    height: calc(100vh);
     background: url("images/69926594_115750249817905_3396160275945095168_n.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -53,14 +58,31 @@ h1 {
 }
 
 .main {
-    background: white;
-    min-height: 100vh;
+    min-height: calc(100vh);
+}
+
+.col-text {
+    background: lightblue;
+}
+.col-image {
+    padding: 0px;
+    height: 320px;
+    overflow: hidden;
+}
+.col-image img {
+    height: inherit;
+    object-position: center;
+    object-fit: cover;
+}
+
+.footer {
+    height: 40px;
 }
 
 /*--FOR LARGER DISPLAYS--*/
 @media screen and (min-width: 768px) {
     .hero {
-        height: calc(50vh);
+        height: calc(100vh);
     }
     .hero .layer h1 {
         font-size: 4em;

@@ -16,36 +16,55 @@
 </head>
 
 <body>
-    <nav id="navbar" class="navbar fixed-top justify-content-evenly align-items-center nav-transparent">
-        <a href="#" class="nav-item nav-link active">HOME</a>
-        <div class="nav-item-dropdown">
-            <a href="#" class="nav-item nav-link dropdown-toggle" data-bs-toggle="dropdown">TALENTS</a>
-            <div class="dropdown-menu">
-                <a href="#" class="dropdown-item">Profile 1</a>
-                <a href="#" class="dropdown-item">Profile 2</a>
-                <a href="#" class="dropdown-item">Profile 3</a>
+    <header class="fixed-top">
+        <nav id="navbar" class="navbar justify-content-evenly align-items-center">
+            <a href="index.html" class="nav-item nav-link active">HOME</a>
+            <div class="nav-item-dropdown">
+                <a href="#" class="nav-item nav-link dropdown-toggle" data-bs-toggle="dropdown">TALENTS</a>
+                <div class="dropdown-menu">
+                    <a href="#" class="dropdown-item">Profile 1</a>
+                    <a href="#" class="dropdown-item">Profile 2</a>
+                    <a href="#" class="dropdown-item">Profile 3</a>
+                </div>
             </div>
-        </div>
-        <a href="#" class="navbar-brand">holoCentral</a>
-        <a href="#" class="nav-item nav-link">ABOUT US</a>
-        <a href="#" class="nav-item nav-link">CONTACT US</a>
-    </nav>
+            <a href="index.html" class="navbar-brand">holoCentral</a>
+            <a href="#" class="nav-item nav-link">ABOUT US</a>
+            <a href="#" class="nav-item nav-link">CONTACT US</a>
+        </nav>
+    </header>
 
     <div class="hero container-fluid">
-        <div class="layer d-flex justify-content-center align-items-center text-white text-center">
+        <div class="layer d-flex flex-column justify-content-center align-items-center text-white text-center">
             <h1>Your One-Stop Shop for All Things Hololive!</h1>
+            insert clickable chevron down cta here<br>
+            p.s. hero images are kewl.
         </div>
     </div>
 
-    <main class="container main">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos deleniti quae quis eaque? Non, nobis adipisci autem consequuntur impedit delectus aspernatur laudantium et sed voluptatum molestiae quod blanditiis, perspiciatis facilis?
-        Illum dolores nemo repellendus impedit quia nihil eaque nostrum sed nobis dolorum dolorem cupiditate quo sint debitis quibusdam non atque suscipit soluta repudiandae, minus ipsum ullam sequi odio? Soluta, veritatis?
-        Doloribus porro dolorum enim quasi amet labore sit, atque ipsum obcaecati animi provident dignissimos facilis! Culpa officiis ipsam necessitatibus fugiat? Culpa asperiores, maxime officia ullam adipisci quasi sint pariatur iste.
-        Dolore quis officiis placeat ipsam architecto neque. Ex officiis, voluptates animi odit aliquam deserunt ipsa iure fuga veniam? Cum at magnam, nam voluptates facilis quis exercitationem aperiam. Mollitia, rerum recusandae.
-        Aperiam sit consectetur vitae similique provident illo quidem minus repellendus nulla amet eveniet, dolore ad porro autem pariatur tempore nemo sequi. Reprehenderit omnis nisi similique maxime accusamus necessitatibus nobis modi.
+    <main class="container main bg-white">
+        <div class="row">
+            <div class="col-md-6 col-text">
+                <h3>What is Hololive?</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque sed eveniet, architecto voluptas quos assumenda ad cupiditate! Aut, quo! Vitae consectetur facere at enim unde qui quis distinctio laudantium. Quaerat.
+                Ipsum, accusantium natus? Harum, soluta cum! Nobis porro tempore laudantium, eos, voluptas omnis sapiente delectus consequuntur nostrum veniam provident est perferendis soluta, enim laboriosam. Corrupti dolor beatae numquam impedit ab.</p>
+            </div>
+            <div class="col-md-6 col-image">
+                <img src="images/2a6.png" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-image">
+                <img src="images/Hololive_all_members_up_to_fifth_gen.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="col-md-6 col-text">
+                <h3>Hololive Branches</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, iusto facilis. Ad excepturi atque beatae molestiae suscipit fugiat assumenda est fuga? Voluptatum repellat eos, molestias quam totam harum debitis quod?
+                Consequatur vel corrupti saepe harum iure quibusdam doloremque! Officia alias nihil et quas expedita, debitis, corporis sunt fuga tenetur hic ipsam? Aut odio autem non veniam et ut perferendis laborum!</p>
+            </div>
+        </div>
     </main>
 
-    <footer class="footer position-relative bottom-0">
+    <footer class="footer position-relative bottom-0 d-flex justify-content-center align-items-center">
         Footer
     </footer>
 
@@ -55,13 +74,13 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
-
     <!--COLORED NAVBAR ON SCROLL DOWN-->
     <script>
         var navbar = document.getElementById('navbar');
+        let scrollHeight = window.innerHeight - 64;
         window.onscroll = function () { 
             "use strict";
-            if (document.body.scrollTop >= 1 || document.documentElement.scrollTop >= 1 ) {
+            if (document.body.scrollTop >= scrollHeight || document.documentElement.scrollTop >= scrollHeight) {
                 navbar.classList.add("nav-colored");
             } 
             else {
