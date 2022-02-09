@@ -1,13 +1,10 @@
-/*--CUSTOM COLORS--*/
-.holo-primary {
-    background: #23c1fe;
-}
-.holo-secondary {
-    background: #536099;
-}
+/*--GOOGLE FONTS--*/
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500&family=Hind+Madurai:wght@600&family=Work+Sans&display=swap');
+
 
 body {
     background: #7CD9FC;
+    font-family: 'Work Sans', sans-serif;
 }
 
 .navbar {
@@ -19,9 +16,13 @@ body {
 }
 .navbar a {
     color: white;
-    font-size: 16px;
+    font-family: 'Hind Madurai', sans-serif;
+    font-size: 20px;
     text-align: center;
-    font-weight: 500;
+    padding: 8px;
+}
+.navbar a.navbar-brand {
+    font-family: 'Hind Madurai', sans-serif;
     padding: 16px;
 }
 .navbar a.navbar-brand, button i {
@@ -30,9 +31,11 @@ body {
 }
 .navbar-nav .nav-link {
     padding: 12px;
-    text-transform: uppercase;
+    font-weight: bold;
 }
-
+.nav-link:hover, .nav-link:focus {
+    color: #ddd;
+}
 .row-spacer {
     height: 83px;
 }
@@ -48,7 +51,7 @@ body {
     background-attachment: fixed;
 }
 .hero .layer {
-    background-color: rgba(64, 64, 64, 0.5);
+    background-color: rgba(64, 64, 64, 0.6);
     width: 100%;
     height: 100%;
 }
@@ -56,24 +59,37 @@ body {
     visibility: hidden;
 }
 .hero .layer h1, i {
-    font-size: 3em;
+    font-size: 2em;
+    font-style: italic;
     color: white;
 }
-
-.col-text, .col-image {
-    height: 320px;
+.hero-hidden {
+    height: 110px;
 }
-.col-text {
-    background: lightblue;
+.col-text, .col-image {
+    min-height: 280px;
+    max-height: 420px;
 }
 .col-image {
     padding: 0px;
-    overflow: hidden;
 }
 .col-image img {
     height: 100%;
-    object-position: 50% 50%;
     object-fit: cover;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.row .cta {
+    width: fit-content;
+    padding: 16px;
+    background: #a2d8e6;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
 }
 
 .footer {
