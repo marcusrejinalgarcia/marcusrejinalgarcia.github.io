@@ -20,7 +20,7 @@ body {
 }
 .navbar a {
     color: white;
-    font-size: 18px;
+    font-size: 16px;
     text-align: center;
     font-weight: 500;
     padding: 16px;
@@ -29,8 +29,8 @@ body {
     color: white;
     font-size: 32px;
 }
-.collapse {
-    height: 40px;
+.navbar-nav .nav-link {
+    padding: 12px;
 }
 
 /*--FOR MOBILE DEVICES--*/
