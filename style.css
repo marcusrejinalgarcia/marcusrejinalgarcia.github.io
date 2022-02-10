@@ -1,125 +1,338 @@
 /*--GOOGLE FONTS--*/
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500&family=Hind+Madurai:wght@600&family=Work+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500&family=Hind+Madurai:wght@600&family=Work+Sans&display=swap");
+/*--FONT VARIABLES--*/
+/*--COLOR VARIABLES--*/
+/*--WORKAROUND FOR INTERPOLATION--*/
+.box1 {
+  background: #4DB4BF;
+}
 
+.box2 {
+  background: #c22e14;
+}
+
+.box3 {
+  background: #B679F2;
+}
+
+.box4 {
+  background: #56AFD6;
+}
+
+html {
+  scroll-behavior: smooth;
+}
 
 body {
-    background: #7CD9FC;
-    font-family: 'Work Sans', sans-serif;
+  background: url("images/asanoha-400px.png") center;
+  font-family: "Work Sans", sans-serif;
 }
 
 .navbar {
-    padding: 0px;
-    max-height: fit-content;
-}
-.nav-colored {
-    background: #23c1fe;
-    border-bottom: 4px solid white;
+  padding: 0px;
+  max-height: -webkit-fit-content;
+  max-height: -moz-fit-content;
+  max-height: fit-content;
 }
 .navbar a {
-    color: white;
-    font-family: 'Hind Madurai', sans-serif;
-    font-size: 3.5vw;
-    text-align: center;
-    padding: 8px;
+  color: white;
+  font-family: "Hind Madurai", sans-serif;
+  font-size: 3vw;
+  text-align: center;
+  padding: 8px;
 }
-.navbar a.navbar-brand {
-    font-family: 'Hind Madurai', sans-serif;
-    padding: 16px;
+.navbar a.dropdown-item {
+  color: black;
+  font-size: 20px;
 }
-.navbar a.navbar-brand, button i {
-    color: white;
-    font-size: 32px;
+.navbar div a.navbar-brand {
+  padding: 16px;
+  font-size: 32px;
 }
-.navbar-nav .nav-link {
-    padding: 12px;
-    font-weight: bold;
+.navbar button i {
+  color: white;
+  font-size: 32px;
 }
-a.dropdown-item {
-    background: white;
-    color: darkgray;
+.navbar .navbar-nav .navbar-link {
+  padding: 12px;
+  font-weight: bold;
 }
-.row-spacer {
-    height: 83px;
+
+.nav-colored {
+  background: #23c1fe;
+  border-bottom: 4px solid white;
+}
+
+div.row-spacer {
+  height: 84px;
 }
 
 /*--FOR MOBILE DEVICES--*/
 .hero {
-    padding: 0px;
-    height: calc(100vh);
-    background: url("images/69926594_115750249817905_3396160275945095168_n.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50% 33.33%;
-    background-attachment: fixed;
+  padding: 0px;
+  height: 100vh;
+  background: url("images/69926594_115750249817905_3396160275945095168_n.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 33.33%;
+  background-attachment: fixed;
 }
 .hero .layer {
-    background-color: rgba(64, 64, 64, 0.6);
-    width: 100%;
-    height: 100%;
+  background-color: rgba(64, 64, 64, 0.6);
+  width: 100%;
+  height: 100%;
 }
 .hero .layer div:first-child {
-    visibility: hidden;
+  visibility: hidden;
 }
-.hero .layer h1, i {
-    font-size: 2em;
-    font-style: italic;
-    color: white;
+.hero .layer h1, .hero .layer i {
+  font-size: 2em;
+  font-style: italic;
+  color: white;
 }
-.hero-hidden {
-    height: 110px;
+.hero .layer .hero-hidden {
+  height: 110px;
 }
+
+main {
+  min-height: calc(100vh - 414px);
+}
+
 .col-text, .col-image {
-    min-height: 280px;
-    max-height: 420px;
+  min-height: 280px;
+  max-height: 420px;
 }
+
 .col-image {
-    padding: 0px;
+  padding: 0px;
 }
 .col-image img, .col-image video {
-    height: 100%;
-    object-fit: cover;
-}
-h1, h2, h3, h4 {
-    font-family: 'Fira Sans', sans-serif;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
-.row .cta {
-    width: fit-content;
-    padding: 16px;
-    background: #a2d8e6;
-    color: white;
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: bold;
-}
-.row .cta:hover {
-    background: aqua;
+h1 {
+  font-family: "Fira Sans", sans-serif;
 }
 
-.footer {
-    height: 40px;
+h2 {
+  font-family: "Fira Sans", sans-serif;
+}
+
+h3 {
+  font-family: "Fira Sans", sans-serif;
+}
+
+h4 {
+  font-family: "Fira Sans", sans-serif;
+}
+
+h5 {
+  font-family: "Fira Sans", sans-serif;
+}
+
+h6 {
+  font-family: "Fira Sans", sans-serif;
+}
+
+.box1 {
+  color: white;
+}
+
+.box2 {
+  color: white;
+}
+
+.box3 {
+  color: white;
+}
+
+.box4 {
+  color: white;
+}
+
+.cta, button.submit {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 16px 24px;
+  background: #23c1fe;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+}
+.cta:hover, button.submit:hover {
+  background: #3DC8FF;
+  color: white;
+}
+
+/*--GENERATE HOMEPAGE BUTTON COLORS--*/
+.box1 {
+  background: #4779CC;
+}
+.box1 .cta {
+  background: #c7cc47;
+  color: white;
+}
+.box1 .cta:hover {
+  background: #d3d76f;
+}
+
+.box2 {
+  background: #c22e14;
+}
+.box2 .cta {
+  background: #1460c2;
+  color: white;
+}
+.box2 .cta:hover {
+  background: #2177e8;
+}
+
+.box3 {
+  background: #7E63DB;
+}
+.box3 .cta {
+  background: #8edb63;
+  color: white;
+}
+.box3 .cta:hover {
+  background: #ace58c;
+}
+
+.box4 {
+  background: #56AFD6;
+}
+.box4 .cta {
+  background: #d6b256;
+  color: white;
+}
+.box4 .cta:hover {
+  background: #e0c57f;
+}
+
+hr {
+  margin: 0px;
+}
+
+footer {
+  background: #78797B;
+  color: white;
+}
+footer p {
+  font-size: 12px;
+  text-align: center;
+}
+
+section.header {
+  height: 200px;
+}
+section.header h1 {
+  font-size: 8vw;
+  color: white;
+  padding: 0px 8px;
+}
+section.header-about {
+  background: #1AFE6F;
+}
+section.header-contact {
+  background: #3656FE;
+}
+section.header-holoEN {
+  background: #56AFD6;
+}
+
+aside.contact-info h4, aside.contact-info p, aside.contact-info i {
+  color: white;
+}
+aside.contact-info p {
+  font-weight: bold;
+}
+aside.contact-info i {
+  font-size: 48px;
+}
+
+div.gen {
+  background: #F8F9FA;
+  min-height: 240px;
+  padding: 24px;
+}
+
+.gen a img {
+  margin-bottom: 12px;
+  background: white;
+}
+.gen a h6 {
+  color: gray;
+}
+.gen a.character {
+  text-decoration: none;
+  padding: 8px;
+}
+.gen a.calli img {
+  border: 2px solid #C70A40;
+}
+.gen a.kiara img {
+  border: 2px solid #F9531D;
+}
+.gen a.ina img {
+  border: 2px solid #61527D;
+}
+.gen a.gura img {
+  border: 2px solid #5782C6;
+}
+.gen a.ame img {
+  border: 2px solid #F6DE96;
+}
+.gen a.irys img {
+  border: 2px solid #3c0024;
+}
+.gen a.sana img {
+  border: 2px solid #FEDE4A;
+}
+.gen a.fauna img {
+  border: 2px solid #A4E5CF;
+}
+.gen a.kronii img {
+  border: 2px solid #0869EC;
+}
+.gen a.mumei img {
+  border: 2px solid #998274;
+}
+.gen a.baelz img {
+  border: 2px solid #D2251E;
+}
+.gen a:hover {
+  background: darkgray;
+}
+.gen a:hover h6 {
+  color: #000;
 }
 
 /*--FOR LARGER DISPLAYS--*/
 @media screen and (min-width: 425px) {
-    nav.navbar {
-        max-height: 134px;
-    }
+  .navbar {
+    max-height: 134px;
+  }
 }
-
 @media screen and (min-width: 576px) {
-    nav.navbar a {
-        font-size: 20px;
-    }
+  .navbar a.nav-link {
+    font-size: 20px;
+  }
 }
 @media screen and (min-width: 768px) {
-    .hero .layer h1, i {
-        font-size: 4em;
-    }
-}
+  .hero .layer h1, i, section.header h1 {
+    font-size: 4em;
+  }
 
+  section.header {
+    height: 280px;
+  }
+}
 @media screen and (min-width: 992px) {
-    .hero .layer h1, i {
-        font-size: 6em;
-    }
+  .hero .layer h1, i {
+    font-size: 6em;
+  }
 }
