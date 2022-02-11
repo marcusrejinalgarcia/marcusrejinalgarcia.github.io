@@ -206,7 +206,7 @@ section {
         background: #3656FE;
     }
     &.header-holoEN {
-        background: #56AFD6;
+        background: lighten(#56AFD6, 15%);
     }
     &.header-calli {
         background: #C70A40;
