@@ -107,6 +107,11 @@ div.row-spacer {
 
 main {
     min-height: calc(100vh - 414px);
+
+    iframe {
+        width: 100%;
+        min-height: 420px;
+    }
 }
 
 .col-text, .col-image {
@@ -176,7 +181,7 @@ hr {
 }
 
 footer {
-    background: #78797B;
+    background: #4a4a4b;
     color: white;
 
     p {
@@ -203,80 +208,172 @@ section {
     &.header-holoEN {
         background: #56AFD6;
     }
+    &.header-calli {
+        background: #C70A40;
+    }
+    &.header-kiara {
+        background: #F9531D;
+    }
+    &.header-ina {
+        background: #61527D;
+    }
+    &.header-gura {
+        background: #5782C6;
+    }
+    &.header-ame {
+        background: #F6DE96;
+    }
 }
 
 aside {
-    &.contact-info {
-        h4, p, i {
-            color: white;
-        }
-        p {
-            font-weight: bold;
-        }
+    color: white;
+    a {
         i {
             font-size: 48px;
+            color: white;
+        }
+    }
+    p {
+        font-weight: bold;
+        a {
+            color: white;
+        }
+    }
+
+    &.aside-calli {
+        background: #FBA3C3;
+    }
+    &.aside-kiara {
+        background: #FACB5F;
+    }
+    &.aside-ina {
+        background: #938ba1;
+    }
+    &.aside-gura {
+        background: #8DC0DF;
+    }
+    &.aside-ame {
+        background: #FAF2D8;
+        color: #000;
+        a {
+            color: #000;
         }
     }
 }
 
 div.gen {
-    background: #F8F9FA;
+    background: #78797b;
+    color: white;
     min-height: 240px;
-    padding: 24px;
-}
+    padding: 24px 20px;
 
-.gen a {
-    img {
-        margin-bottom: 12px;
-        background: white;
-    }
-    h6 {
-        color: gray;
-    }
-
-    &.character {
-        text-decoration: none;
-        padding: 8px;
-    }
-    &.calli img {
-        border: 2px solid #C70A40;
-    }
-    &.kiara img {
-        border: 2px solid #F9531D;
-    }
-    &.ina img {
-        border: 2px solid #61527D;
-    }
-    &.gura img {
-        border: 2px solid #5782C6;
-    }
-    &.ame img {
-        border: 2px solid #F6DE96;
-    }
-    &.irys img {
-        border: 2px solid #3c0024;
-    }
-    &.sana img {
-        border: 2px solid #FEDE4A;
-    }
-    &.fauna img {
-        border: 2px solid #A4E5CF;
-    }
-    &.kronii img {
-        border: 2px solid #0869EC;
-    }
-    &.mumei img {
-        border: 2px solid #998274;
-    }
-    &.baelz img {
-        border: 2px solid #D2251E;
-    }
-
-    &:hover {
-        background: darkgray;
-
+    a {
+        img {
+            margin-bottom: 12px;
+            background: white;
+        }
         h6 {
-            color: #000;
+            color: white;
+        }
+    
+        &.character {
+            text-decoration: none;
+            padding: 20px;
+        }
+        &.calli {
+            &:hover {
+                background: #FBA3C3;
+            }
+            img {
+                border: 2px solid #C70A40;
+            }
+        }
+        &.kiara {
+            &:hover {
+                background: #FACB5F;
+            }
+            img {
+                border: 2px solid #F9531D;
+            }
+        }
+        &.ina {
+            &:hover {
+                background: #938ba1;
+            }
+            img {
+                border: 2px solid #61527D;
+            }
+        }
+        &.gura {
+            &:hover {
+                background: #8DC0DF;
+            }
+            img {
+                border: 2px solid #5782C6;
+            }
+        }
+        &.ame {
+            &:hover {
+                background: #FAF2D8;
+            }
+            img {
+                border: 2px solid #F6DE96;
+            }
+            }
+        &.irys {
+            &:hover {
+                background: lighten(#3c0024, 25%);
+            }
+            img {
+                border: 2px solid #3c0024;
+            }
+        }
+        &.sana {
+            &:hover {
+                background: lighten(#FEDE4A, 25%);
+            }
+            img {
+                border: 2px solid #FEDE4A;
+            }
+        }
+        &.fauna {
+            &:hover {
+                background: lighten(#A4E5CF, 25%);
+            }
+            img {
+                border: 2px solid #A4E5CF;
+            }
+        }
+        &.kronii {
+            &:hover {
+                background: lighten(#0869EC, 25%);
+            }
+            img {
+                border: 2px solid #0869EC;
+            }
+        }
+        &.mumei {
+            &:hover {
+                background: lighten(#998274, 25%);
+            }
+            img {
+                border: 2px solid #998274;
+            }
+        }
+        &.baelz {
+            &:hover {
+                background: lighten(#D2251E, 25%);
+            }
+            img {
+                border: 2px solid #D2251E;
+            }
+        }
+        &:hover {
+            background: darkgray;
+    
+            h6 {
+                color: #000;
+            }
         }
     }
 }

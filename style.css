@@ -97,6 +97,10 @@ div.row-spacer {
 main {
   min-height: calc(100vh - 414px);
 }
+main iframe {
+  width: 100%;
+  min-height: 420px;
+}
 
 .col-text, .col-image {
   min-height: 280px;
@@ -218,7 +222,7 @@ hr {
 }
 
 footer {
-  background: #78797B;
+  background: #4a4a4b;
   color: white;
 }
 footer p {
@@ -243,71 +247,142 @@ section.header-contact {
 section.header-holoEN {
   background: #56AFD6;
 }
+section.header-calli {
+  background: #C70A40;
+}
+section.header-kiara {
+  background: #F9531D;
+}
+section.header-ina {
+  background: #61527D;
+}
+section.header-gura {
+  background: #5782C6;
+}
+section.header-ame {
+  background: #F6DE96;
+}
 
-aside.contact-info h4, aside.contact-info p, aside.contact-info i {
+aside {
   color: white;
 }
-aside.contact-info p {
+aside a i {
+  font-size: 48px;
+  color: white;
+}
+aside p {
   font-weight: bold;
 }
-aside.contact-info i {
-  font-size: 48px;
+aside p a {
+  color: white;
+}
+aside.aside-calli {
+  background: #FBA3C3;
+}
+aside.aside-kiara {
+  background: #FACB5F;
+}
+aside.aside-ina {
+  background: #938ba1;
+}
+aside.aside-gura {
+  background: #8DC0DF;
+}
+aside.aside-ame {
+  background: #FAF2D8;
+  color: #000;
+}
+aside.aside-ame a {
+  color: #000;
 }
 
 div.gen {
-  background: #F8F9FA;
+  background: #78797b;
+  color: white;
   min-height: 240px;
-  padding: 24px;
+  padding: 24px 20px;
 }
-
-.gen a img {
+div.gen a img {
   margin-bottom: 12px;
   background: white;
 }
-.gen a h6 {
-  color: gray;
+div.gen a h6 {
+  color: white;
 }
-.gen a.character {
+div.gen a.character {
   text-decoration: none;
-  padding: 8px;
+  padding: 20px;
 }
-.gen a.calli img {
+div.gen a.calli:hover {
+  background: #FBA3C3;
+}
+div.gen a.calli img {
   border: 2px solid #C70A40;
 }
-.gen a.kiara img {
+div.gen a.kiara:hover {
+  background: #FACB5F;
+}
+div.gen a.kiara img {
   border: 2px solid #F9531D;
 }
-.gen a.ina img {
+div.gen a.ina:hover {
+  background: #938ba1;
+}
+div.gen a.ina img {
   border: 2px solid #61527D;
 }
-.gen a.gura img {
+div.gen a.gura:hover {
+  background: #8DC0DF;
+}
+div.gen a.gura img {
   border: 2px solid #5782C6;
 }
-.gen a.ame img {
+div.gen a.ame:hover {
+  background: #FAF2D8;
+}
+div.gen a.ame img {
   border: 2px solid #F6DE96;
 }
-.gen a.irys img {
+div.gen a.irys:hover {
+  background: #bc0071;
+}
+div.gen a.irys img {
   border: 2px solid #3c0024;
 }
-.gen a.sana img {
+div.gen a.sana:hover {
+  background: #fff5c9;
+}
+div.gen a.sana img {
   border: 2px solid #FEDE4A;
 }
-.gen a.fauna img {
+div.gen a.fauna:hover {
+  background: white;
+}
+div.gen a.fauna img {
   border: 2px solid #A4E5CF;
 }
-.gen a.kronii img {
+div.gen a.kronii:hover {
+  background: #79b0fa;
+}
+div.gen a.kronii img {
   border: 2px solid #0869EC;
 }
-.gen a.mumei img {
+div.gen a.mumei:hover {
+  background: #cfc4be;
+}
+div.gen a.mumei img {
   border: 2px solid #998274;
 }
-.gen a.baelz img {
+div.gen a.baelz:hover {
+  background: #ed8682;
+}
+div.gen a.baelz img {
   border: 2px solid #D2251E;
 }
-.gen a:hover {
+div.gen a:hover {
   background: darkgray;
 }
-.gen a:hover h6 {
+div.gen a:hover h6 {
   color: #000;
 }
 
