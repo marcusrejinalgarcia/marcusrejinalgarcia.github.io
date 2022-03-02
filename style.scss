@@ -1,6 +1,9 @@
 section {
+    article {
+        // 
+    }
     &#hero {
-        height: calc(100vh - 56px);
+        height: 100vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -8,4 +11,12 @@ section {
         background: lightblue;
         color: white;
     }
+}
+
+div.card-skills {
+    flex: 0 0 320px;
+    height: 160px;
+    padding: 1em;
+    border-radius: 1em;
+    box-shadow: 2px 2px lightgray;
 }
