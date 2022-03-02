@@ -1,97 +1,11 @@
-$break-mobile: 426px; // 425px + 1px
-$break-tablet: 769px; // 768px + 1px
-$break-laptop: 1025px;// 1024px + 1px
-
-* {
-    box-sizing: border-box;
-    margin: 0;;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100vw;
-    margin: 0;
-    background: lightsalmon;
-    // overflow: hidden;
-}
-
-#hero { 
-    display: flex;
-    height: 100vh;
-
-    // default for mobile devices
-
-    flex-direction: column;
-    font-size: clamp(64px, 10vw, 96px);
-    div {
-        width: 100vw;
-        height: 50vh;
-        display: grid;
-        place-content: center;
-        z-index: 1;
-        &#nova {
-            background: gray;
-        }
-        &#et {
-            $circle-diameter: clamp(160px, 2em, 320px);
-            $circle-radius: calc($circle-diameter / 2);
-
-            position: absolute;
-            top: calc(50vh - $circle-radius);
-            left: calc(50vw - $circle-radius);
-            z-index: 10;
-            width: $circle-diameter;
-            height: $circle-diameter;
-            border-radius: $circle-radius;
-            background: white;
-        }
-        &#vetera {
-            background: yellow;
-        }
-    }
-    @media screen and (min-width: $break-tablet) {
-        flex-direction: row;
-        div {
-            width: 50vw;
-            height: 100vh;
-        }
-    }
-}
-    
-main {
-    width: 100vw;
-    @media screen and (min-width: $break-mobile) {
-        width: clamp(320px, 80vw, 1024px);
-    }
-    padding: 2em;
-    section {
-        background: white;
-        padding: 2em;
-        border-radius: 3em;
-        margin: 0 0 2em;
-        box-shadow: 4px 4px gray;
-
-        div.card-container {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            gap: 1em;
-        }
-
-        div.card{
-            height: 240px;
-            border-radius: 1em;
-            background: lightyellow;
-            box-shadow: 4px 4px gray;
-            flex: 1 1 320px;
-        }
+section {
+    &#hero {
+        height: calc(100vh - 56px);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: lightblue;
+        color: white;
     }
 }
