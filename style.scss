@@ -1,22 +1,115 @@
-section {
-    article {
-        // 
+// color variables
+$bg-primary: #404040;
+$bg-primary-1: #262626;
+$bg-primary-2: #404040;
+
+
+
+:root {
+    font-size: 16px; // default
+    // font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    @media screen and (max-width: 319px) {
+        font-size: 14px;
     }
+}
+
+body {
+    background: url(img/sumaid-pal-singh-bakshi-vq-A3vOlEr0-unsplash.jpg) fixed right bottom;
+    background-size: cover;
+    overflow: overlay;
+
+    &::-webkit-scrollbar {
+        width: .5rem;
+    }
+    &::-webkit-scrollbar-track {
+        background: transparent;
+    }
+    &::-webkit-scrollbar-thumb {
+        background: $bg-primary-2;
+        border-radius: .25rem;
+    }
+}
+
+header {
+    background: transparent;
+    padding: 0;
+    // height: 5rem; // 80px by default
+
+    // .navbar {
+        // height: 5rem;
+    // }
+
+    .navbar-brand, .nav-link, .navbar-toggler {
+        color: white;
+    }
+    .navbar-brand, .navbar-toggler {
+        font-weight: 500;
+        font-size: 1.5rem;
+    }
+}
+
+main {
+    background: white;
+}
+
+section {
+    // article {
+    //      
+    // }
     &#hero {
         height: 100vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background: lightblue;
+        background: transparent;     
         color: white;
+
+        #typewriter {
+            border-right: 2px solid white;
+        }
+
+        a.hero-btn {
+            text-decoration: none;
+            border: 2px solid white;
+            border-radius: 2rem;
+            margin: 1rem;
+            padding: 1rem;
+            font-size: 1rem;
+            font-weight: bold;
+            
+
+            &#hero-btn-primary {
+                background: white;
+                color: black;
+                &:hover {
+                    background: lightgray;
+                }
+            }
+            &#hero-btn-secondary {
+                background: transparent;
+                color: white;
+                &:hover {
+                    background: lightgray;
+                }
+            }
+        }
     }
+    
+}
+
+section.skills {
+    margin-bottom: 2em;
 }
 
 div.card-skills {
-    flex: 0 0 320px;
-    height: 160px;
+    flex: 1 1 280px;
+    height: 180px;
     padding: 1em;
     border-radius: 1em;
     box-shadow: 2px 2px lightgray;
+
+    &:hover {
+        background: lightgray;
+    }
 }

@@ -1,13 +1,22 @@
-let heroSection = document.getElementsByClassName("hero-section");
+let i = 0;
+function typeWriter() {
+    let txt = 'Hello, World!'; /* The text */
+    let speed = 100; /* The speed/duration of the effect in milliseconds */
+    if (i < txt.length) {
+        document.getElementById("typewriter").innerHTML += txt.charAt(i);
+        i++;
+        setTimeout(typeWriter, speed);
+    }
+};
 
-[...heroSection].forEach(part => {
-    part.addEventListener('click', enableScroll);
-})
+function colorizeNavbar() {
+    var header = document.querySelector('header');
+    let scrollHeight = window.innerHeight// - parseInt(getComputedStyle(header).height);
+    if (document.body.scrollTop >= scrollHeight || document.documentElement.scrollTop >= scrollHeight) {
+        header.style.background = "#404040";
+    }
+    else {
+        header.style.background = "transparent";
+    }
 
-// if (document.body.scrollTop) enableScroll();
-
-function enableScroll() {
-    console.log("scroll");
-    document.body.style.overflow = "scroll";
-    document.body.style.overflowX = "hidden";
 }

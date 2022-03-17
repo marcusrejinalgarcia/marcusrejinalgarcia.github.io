@@ -1,17 +1,91 @@
+:root {
+  font-size: 16px;
+}
+@media screen and (max-width: 319px) {
+  :root {
+    font-size: 14px;
+  }
+}
+
+body {
+  background: url(img/sumaid-pal-singh-bakshi-vq-A3vOlEr0-unsplash.jpg) fixed right bottom;
+  background-size: cover;
+  overflow: overlay;
+}
+body::-webkit-scrollbar {
+  width: 0.5rem;
+}
+body::-webkit-scrollbar-track {
+  background: transparent;
+}
+body::-webkit-scrollbar-thumb {
+  background: #404040;
+  border-radius: 0.25rem;
+}
+
+header {
+  background: transparent;
+  padding: 0;
+}
+header .navbar-brand, header .nav-link, header .navbar-toggler {
+  color: white;
+}
+header .navbar-brand, header .navbar-toggler {
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+main {
+  background: white;
+}
+
 section#hero {
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: lightblue;
+  background: transparent;
   color: white;
+}
+section#hero #typewriter {
+  border-right: 2px solid white;
+}
+section#hero a.hero-btn {
+  text-decoration: none;
+  border: 2px solid white;
+  border-radius: 2rem;
+  margin: 1rem;
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+}
+section#hero a.hero-btn#hero-btn-primary {
+  background: white;
+  color: black;
+}
+section#hero a.hero-btn#hero-btn-primary:hover {
+  background: lightgray;
+}
+section#hero a.hero-btn#hero-btn-secondary {
+  background: transparent;
+  color: white;
+}
+section#hero a.hero-btn#hero-btn-secondary:hover {
+  background: lightgray;
+}
+
+section.skills {
+  margin-bottom: 2em;
 }
 
 div.card-skills {
-  flex: 0 0 320px;
-  height: 160px;
+  flex: 1 1 280px;
+  height: 180px;
   padding: 1em;
   border-radius: 1em;
   box-shadow: 2px 2px lightgray;
+}
+div.card-skills:hover {
+  background: lightgray;
 }
