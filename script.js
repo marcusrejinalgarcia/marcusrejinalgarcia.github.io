@@ -13,10 +13,12 @@ function colorizeNavbar() {
     var header = document.querySelector('header');
     let scrollHeight = window.innerHeight// - parseInt(getComputedStyle(header).height);
     if (document.body.scrollTop >= scrollHeight || document.documentElement.scrollTop >= scrollHeight) {
-        header.style.background = "#404040";
+        header.style.background = "#262626";
+        header.style.borderBottom = "1px solid white"
     }
     else {
         header.style.background = "transparent";
+        header.style.borderBottom = "1px solid transparent"
     }
 
 }

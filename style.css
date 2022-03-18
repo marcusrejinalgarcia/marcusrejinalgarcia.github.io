@@ -10,6 +10,7 @@
 body {
   background: url(img/sumaid-pal-singh-bakshi-vq-A3vOlEr0-unsplash.jpg) fixed right bottom;
   background-size: cover;
+  color: white;
   overflow: overlay;
 }
 body::-webkit-scrollbar {
@@ -26,6 +27,7 @@ body::-webkit-scrollbar-thumb {
 header {
   background: transparent;
   padding: 0;
+  border-bottom: 1px solid transparent;
 }
 header .navbar-brand, header .nav-link, header .navbar-toggler {
   color: white;
@@ -36,9 +38,12 @@ header .navbar-brand, header .navbar-toggler {
 }
 
 main {
-  background: white;
+  background: #262626;
 }
 
+section {
+  padding: 2rem;
+}
 section#hero {
   height: 100vh;
   display: flex;
@@ -65,27 +70,60 @@ section#hero a.hero-btn#hero-btn-primary {
   color: black;
 }
 section#hero a.hero-btn#hero-btn-primary:hover {
-  background: lightgray;
+  background: #E2E8F0;
 }
 section#hero a.hero-btn#hero-btn-secondary {
   background: transparent;
   color: white;
+  border: 2px solid transparent;
 }
 section#hero a.hero-btn#hero-btn-secondary:hover {
-  background: lightgray;
+  text-decoration: underline;
 }
 
 section.skills {
   margin-bottom: 2em;
 }
 
-div.card-skills {
+div.card {
   flex: 1 1 280px;
+  background: #e6e6e6;
+  color: black;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+div.card:hover {
+  background: lightgray;
+}
+
+div.card-skills {
   height: 180px;
   padding: 1em;
   border-radius: 1em;
-  box-shadow: 2px 2px lightgray;
 }
-div.card-skills:hover {
-  background: lightgray;
+
+div.card-projects {
+  padding: 0;
+}
+div.card-projects img {
+  overflow: hidden;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+div.card-projects h5, div.card-projects p {
+  padding: 0 1em;
+  padding-top: 1em;
+}
+div.card-projects div.links {
+  display: flex;
+  flex-direction: row;
+  margin: 1em;
+  gap: 1em;
+}
+div.card-projects div.links a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  background: gray;
+  padding: 0.5em;
+  border-radius: 0.5em;
 }

@@ -16,6 +16,7 @@ $bg-primary-2: #404040;
 body {
     background: url(img/sumaid-pal-singh-bakshi-vq-A3vOlEr0-unsplash.jpg) fixed right bottom;
     background-size: cover;
+    color: white;
     overflow: overlay;
 
     &::-webkit-scrollbar {
@@ -38,7 +39,7 @@ header {
     // .navbar {
         // height: 5rem;
     // }
-
+    border-bottom: 1px solid transparent;
     .navbar-brand, .nav-link, .navbar-toggler {
         color: white;
     }
@@ -49,11 +50,11 @@ header {
 }
 
 main {
-    background: white;
+    background: $bg-primary-1;
 }
 
 section {
-    // article {
+    padding: 2rem;
     //      
     // }
     &#hero {
@@ -83,14 +84,18 @@ section {
                 background: white;
                 color: black;
                 &:hover {
-                    background: lightgray;
+                    background: #E2E8F0
+;
                 }
             }
             &#hero-btn-secondary {
                 background: transparent;
                 color: white;
+                border: 2px solid transparent;
                 &:hover {
-                    background: lightgray;
+                    // background: transparent;
+                    // border: 2px solid #E2E8F0;
+                    text-decoration: underline;
                 }
             }
         }
@@ -102,14 +107,47 @@ section.skills {
     margin-bottom: 2em;
 }
 
-div.card-skills {
+div.card {
     flex: 1 1 280px;
+    background: hsl(0, 0%, 90%);
+    color: black;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    
+    &:hover {
+        background: lightgray;
+    }
+}
+
+div.card-skills {
     height: 180px;
     padding: 1em;
     border-radius: 1em;
-    box-shadow: 2px 2px lightgray;
+}
 
-    &:hover {
-        background: lightgray;
+div.card-projects {
+    padding: 0;
+
+    img {
+        overflow: hidden;
+        object-fit: cover;
+    }
+    h5, p {
+        padding: 0 1em;
+        padding-top: 1em;
+    }
+    div.links {
+        display: flex;
+        flex-direction: row;
+        margin: 1em;
+        gap: 1em;
+
+        a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            background: gray;
+            padding: .5em;
+            border-radius: .5em;
+        }
     }
 }
