@@ -6,7 +6,7 @@ const Navbar = () => {
     <header id='navbar' className='fixed top-0 left-0 right-0 h-16 bg-transparent flex place-content-center'>
       <nav className='container mx-auto px-6 flex flex-row justify-center md:justify-between align-center'>
         <div className='flex place-content-center'>
-          <h1 className='text-white text-2xl font-bold my-auto'>marcusrejinalgarcia</h1>
+          <a href="#" className='text-white text-2xl font-bold my-auto decoration-yellow-300 hover:underline'>marcusrejinalgarcia</a>
         </div>
         <div className='place-content-center hidden md:flex'>
           <ul className='my-auto'>

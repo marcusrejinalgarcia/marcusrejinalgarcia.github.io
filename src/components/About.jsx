@@ -18,7 +18,7 @@ const About = () => {
           <p className='xl:max-w-prose text-lg mt-4 md:mt-0'>I found web development to be the perfect profession for me. It involves coding, which requires analysis and problem solving, not to mention a lot of math and logic. Having a creative touch helps out a lot, too, especially when you're involved with the front-end. It's this perfect combination that draws me to stick with it.</p>
           
         </div>
-        <div className='flex flex-col place-content-center lg:max-w-md m-auto py-6 gap-4'>
+        <div className='flex flex-col place-content-center lg:max-w-md m-auto xl:mr-6 py-6 gap-4'>
           <p className='text-center text-4xl italic font-medium'><span className='text-4xl text-yellow-300'>{'\u275D'}</span> Design is fifty percent <span className='text-4xl text-yellow-300 font-extrabold'> mathematics</span>, whatever percent <span className='text-4xl text-yellow-300 font-extrabold'>instinct</span>. <span className='text-4xl text-yellow-300'>{'\u275E'}</span></p>
           <p className='text-center text-gray-400 text-xl italic font-medium'>-some random web developer on the internet named Marcus, I guess?</p>
         </div>
