@@ -42,7 +42,7 @@ const Portfolio = () => {
   return (
     <section id='projects' className='container mx-auto lg:px-16 text-white'>
       <SectionHeader title='projects' subtitle="what I already did" />
-      <div className="flex flex-row flex-wrap place-content-center lg:place-content-start lg:mx-6 gap-12 md:gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {/* <ProjectCard />  
         <ProjectCard />  
         <ProjectCard /> */}
