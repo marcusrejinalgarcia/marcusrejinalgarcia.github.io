@@ -1,6 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { solid, regular, brands } from '@fortawesome/fontawesome-svg-core/import.macro';
+import { brands } from '@fortawesome/fontawesome-svg-core/import.macro';
 
 require.context('../img', false, /\.(png|jpe?g|svg)$/)
 
@@ -62,7 +62,7 @@ const ProjectCard = (props) => {
   const image = `${props.image}`;
 
   return (
-    <div className='relative flex-initial basis-80 rounded-lg bg-gray-700 hover:bg-gray-600 active:bg-gray-600 min-h-fit'>
+    <div className='relative flex-initial basis-96 rounded-lg bg-gray-700 hover:bg-gray-600 active:bg-gray-600 min-h-fit hover:scale-105 transition ease-in-out'>
       <img src={images[`${image}`]} alt={props.name} className='rounded-t-lg w-full h-48 object-cover' />
       <div className='flex flex-col justify-center p-6 h-72 sm:h-64 text-white'>
         <div className='flex flex-row flex-wrap gap-2'>

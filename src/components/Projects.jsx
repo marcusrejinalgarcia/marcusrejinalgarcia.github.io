@@ -6,7 +6,7 @@ import ProjectCard from './ProjectCard';
 const ProjectList = [
   {
     name: 'holoCentral',
-    description: 'insert short description here',
+    description: `A website by a Hololive fan, for Hololive fans. (Some parts still under construction)`,
     image: 'holoCentral.png',
     techStack: ['HTML', 'CSS', 'JavaScript', 'Bootstrap'],
     siteURL: 'http://marcusrejinalgarcia.github.io/holoCentral',
@@ -22,7 +22,7 @@ const ProjectList = [
   },
   {
     name: 'Coding Journal',
-    description: 'insert short description here',
+    description: 'A simple journaling webapp with persistent local storage',
     image: 'coding-journal.png',
     techStack: ['React', 'Chakra UI'],
     siteURL: 'http://marcusrejinalgarcia.github.io/my-coding-journal',
