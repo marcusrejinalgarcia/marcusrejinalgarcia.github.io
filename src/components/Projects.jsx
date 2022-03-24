@@ -6,7 +6,7 @@ import ProjectCard from './ProjectCard';
 const ProjectList = [
   {
     name: 'holoCentral',
-    description: `A website by a Hololive fan, for Hololive fans. (Some parts still under construction)`,
+    description: `A website by a Hololive fan, for Hololive fans.`,
     image: 'holoCentral.png',
     techStack: ['HTML', 'CSS', 'JavaScript', 'Bootstrap'],
     siteURL: 'http://marcusrejinalgarcia.github.io/holoCentral',
@@ -14,7 +14,7 @@ const ProjectList = [
   },
   {
     name: 'Libertas Health',
-    description: 'Sample patient login and information form implemented using the React library and Material UI',
+    description: 'Sample patient login and information form made using React and Material UI',
     image: 'Libertas-Health.png',
     techStack: ['React', 'Material UI'],
     siteURL: 'https://marcusrejinalgarcia.github.io/Libertas-Health',
@@ -30,7 +30,7 @@ const ProjectList = [
   },
   {
     name: 'My Portfolio',
-    description: 'The website you\'re looking at right now. Made with React and Tailwind—a match made in heaven, IMO',
+    description: 'This website. Made with React and Tailwind—a match made in heaven, IMO',
     image: 'portfolio.png',
     techStack: ['React', 'Tailwind'],
     siteURL: 'http://marcusrejinalgarcia.github.io',
@@ -41,8 +41,8 @@ const ProjectList = [
 const Portfolio = () => {
   return (
     <section id='projects' className='container mx-auto lg:px-16 text-white'>
-      <SectionHeader title='projects' subtitle="what I already did" />
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <SectionHeader title='projects' subtitle="what I made" />
+      <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 justify-evenly justify-items-center lg:px-8 gap-8">
         {/* <ProjectCard />  
         <ProjectCard />  
         <ProjectCard /> */}

@@ -44,6 +44,10 @@ const TechTag = ({ tech }) => {
       bgColor = 'bg-[#81e6d9]';
       textColor = 'text-gray-800';
       break;
+    case 'Tailwind':
+      bgColor = 'bg-[#38bdf8]';
+      textColor = 'text-white';
+      break;
 
     default:
       bgColor = 'bg-gray-500';
@@ -62,10 +66,10 @@ const ProjectCard = (props) => {
   const image = `${props.image}`;
 
   return (
-    <div className='relative flex-initial basis-96 rounded-lg bg-gray-700 hover:bg-gray-600 active:bg-gray-600 min-h-fit hover:scale-105 transition ease-in-out'>
-      <img src={images[`${image}`]} alt={props.name} className='rounded-t-lg w-full h-48 object-cover' />
-      <div className='flex flex-col justify-center p-6 h-72 sm:h-64 text-white'>
-        <div className='flex flex-row flex-wrap gap-2'>
+    <div className='relative rounded-xl aspect-square xs:aspect-[5/4] bg-gray-700'>
+      <img src={images[`${image}`]} alt={props.name} className='rounded-xl h-full object-cover' />
+      <div className='absolute top-0 bottom-0 left-0 right-0 flex flex-col justify-center p-6 w-full h-full opacity-0 hover:opacity-100 rounded-xl transition-all bg-neutral-800/80  backdrop-blur-md text-white'>
+        <div className='flex flex-row flex-no overflow-auto gap-2'>
           {props.techStack.map((tech) => {
             return (
               <TechTag tech={tech} />
@@ -73,7 +77,7 @@ const ProjectCard = (props) => {
           })}
         </div>
         <h6 className='py-3 text-2xl font-semibold'>{props.name}</h6>
-        <p className=''>{props.description}</p>
+        <p className='text-base'>{props.description}</p>
         <div className='flex flex-row mt-auto'>
           <a className='py-2 px-3 border-2 rounded-full' href={`${props.siteURL}`} target={'_blank'} rel='noreferrer'>Visit Site</a>
           <a className='py-2 px-3 relative top-0.5 hover:underline underline-offset-2' href={`${props.githubRepo}`} target={'_blank'} rel='noreferrer'><FontAwesomeIcon icon={brands('github')} /> GitHub</a>
