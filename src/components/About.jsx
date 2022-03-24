@@ -5,7 +5,7 @@ import me from '../img/me.jpg'
 const About = () => {
   return (
     <section id='about' className='container mx-auto lg:px-16 text-white'>
-      <SectionHeader title='about me' subtitle='who I am' />
+      <SectionHeader title='about' subtitle='who I am' />
       <article className='container mx-auto flex flex-col xl:flex-row lg:px-8 gap-8'>
         <div className='grow'>
           <img 
