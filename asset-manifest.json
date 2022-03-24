@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.5cf09467.css",
-    "main.js": "/static/js/main.fe648051.js",
+    "main.css": "/static/css/main.2f039748.css",
+    "main.js": "/static/js/main.e4b52ca5.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
     "static/media/holoCentral.png": "/static/media/holoCentral.6454b6e9d566ba224a1d.png",
     "static/media/portfolio.png": "/static/media/portfolio.032c59a726ba45347a9f.png",
@@ -9,14 +9,13 @@
     "static/media/Libertas-Health.png": "/static/media/Libertas-Health.96db190e7fd26702a308.png",
     "static/media/hero-bg.jpg": "/static/media/hero-bg.dfabffb8b47b7c260b38.jpg",
     "static/media/coding-journal.png": "/static/media/coding-journal.da213e837ad755546c77.png",
-    "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/index.html",
-    "main.5cf09467.css.map": "/static/css/main.5cf09467.css.map",
-    "main.fe648051.js.map": "/static/js/main.fe648051.js.map",
+    "main.2f039748.css.map": "/static/css/main.2f039748.css.map",
+    "main.e4b52ca5.js.map": "/static/js/main.e4b52ca5.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5cf09467.css",
-    "static/js/main.fe648051.js"
+    "static/css/main.2f039748.css",
+    "static/js/main.e4b52ca5.js"
   ]
 }
