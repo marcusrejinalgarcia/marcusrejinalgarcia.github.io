@@ -1,49 +1,51 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 * {
   scroll-behavior: smooth;
-
-  /* Default for Mobile Viewports */
   font-size: 16px;
 }
 
-/* @media screen and (min-width: 768px) { */
-  /* * { */
-    /* font-size: 16px; */
-  /* } */
-/* } */
-/*  */
+@media screen and (max-width: 768px) {
+  * {
+    font-size: 12px;
+  }
+}
 body {
   background: url("./img/hero-bg.jpg");
   background-attachment: fixed;
   background-position: right;
   background-size: cover;
   margin: 0;
-
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
   overflow-x: hidden;
   overflow-y: overlay;
+  scroll-padding-top: 4rem;
 }
 
 ::-webkit-scrollbar {
   width: 8px;
 }
+
 ::-webkit-scrollbar-track {
   background: transparent;
 }
+
 ::-webkit-scrollbar-thumb {
   background: #A0AEC080;
   border-radius: 4px;
 }
+
 ::-webkit-scrollbar-thumb:hover {
   background: #A0AEC0;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+section {
+  scroll-margin-top: 4rem;
 }

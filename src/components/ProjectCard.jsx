@@ -56,9 +56,9 @@ const TechTag = ({ tech }) => {
   }
 
   return (
-    <p className={`inline-block py-1 px-2 rounded-full text-xs font-semibold ${bgColor} ${textColor}`}>
+    <a href='#' className={`inline-block py-1 px-2 rounded-full text-xs font-semibold ${bgColor} ${textColor}`}>
       {tech}
-    </p>
+    </a>
   )
 }
 
@@ -68,8 +68,8 @@ const ProjectCard = (props) => {
   return (
     <div className='relative rounded-xl aspect-square xs:aspect-[5/4] bg-gray-700'>
       <img src={images[`${image}`]} alt={props.name} className='rounded-xl h-full object-cover' />
-      <div className='absolute top-0 bottom-0 left-0 right-0 flex flex-col justify-center p-6 w-full h-full opacity-0 hover:opacity-100 rounded-xl transition-all bg-neutral-800/80  backdrop-blur-md text-white'>
-        <div className='flex flex-row flex-no overflow-auto gap-2'>
+      <div className='absolute top-0 bottom-0 left-0 right-0 flex flex-col justify-center p-6 w-full h-full opacity-0 hover:opacity-100 rounded-xl transition-all bg-neutral-800/70  backdrop-blur-md text-white'>
+        <div className='flex flex-row flex-nowrap overflow-auto gap-2'>
           {props.techStack.map((tech) => {
             return (
               <TechTag tech={tech} />
@@ -79,8 +79,8 @@ const ProjectCard = (props) => {
         <h6 className='py-3 text-2xl font-semibold'>{props.name}</h6>
         <p className='text-base'>{props.description}</p>
         <div className='flex flex-row mt-auto'>
-          <a className='py-2 px-3 border-2 rounded-full' href={`${props.siteURL}`} target={'_blank'} rel='noreferrer'>Visit Site</a>
-          <a className='py-2 px-3 relative top-0.5 hover:underline underline-offset-2' href={`${props.githubRepo}`} target={'_blank'} rel='noreferrer'><FontAwesomeIcon icon={brands('github')} /> GitHub</a>
+          <a className='py-2 px-3 rounded-full font-semibold bg-[#4E47FC] hover:bg-[#6661FF] text-white' href={`${props.siteURL}`} target={'_blank'} rel='noreferrer'>Visit Site</a>
+          <a className='py-2 px-3 absolute left-28 font-semibold hover:underline underline-offset-2' href={`${props.githubRepo}`} target={'_blank'} rel='noreferrer'><FontAwesomeIcon icon={brands('github')} /> GitHub</a>
 
         </div>
       </div>
