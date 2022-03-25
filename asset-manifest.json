@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.2f039748.css",
-    "main.js": "/static/js/main.e4b52ca5.js",
+    "main.css": "/static/css/main.959946d6.css",
+    "main.js": "/static/js/main.051f6188.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
     "static/media/holoCentral.png": "/static/media/holoCentral.6454b6e9d566ba224a1d.png",
     "static/media/portfolio.png": "/static/media/portfolio.032c59a726ba45347a9f.png",
@@ -10,12 +10,12 @@
     "static/media/hero-bg.jpg": "/static/media/hero-bg.dfabffb8b47b7c260b38.jpg",
     "static/media/coding-journal.png": "/static/media/coding-journal.da213e837ad755546c77.png",
     "index.html": "/index.html",
-    "main.2f039748.css.map": "/static/css/main.2f039748.css.map",
-    "main.e4b52ca5.js.map": "/static/js/main.e4b52ca5.js.map",
+    "main.959946d6.css.map": "/static/css/main.959946d6.css.map",
+    "main.051f6188.js.map": "/static/js/main.051f6188.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2f039748.css",
-    "static/js/main.e4b52ca5.js"
+    "static/css/main.959946d6.css",
+    "static/js/main.051f6188.js"
   ]
 }
