@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const NavMenu = ({ children }) => {
   return (
@@ -29,8 +29,21 @@ const NavItem = ({ children }) => {
 }
 
 const Navbar = () => {
+  const [colorChange, setColorchange] = useState(false);
+  const scrollHeight = window.innerHeight - 64;
+  const changeNavbarColor = () =>{
+     if (window.scrollY >= scrollHeight) {
+       setColorchange(true);
+     } else {
+       setColorchange(false);
+     }
+  };
+
+  window.addEventListener('scroll', changeNavbarColor);
+  const navbarColor = colorChange ? 'bg-black border-b-2 border-b-yellow-400' : 'bg-transparent';
+
   return (
-    <header id='navbar' className='fixed top-0 left-0 right-0 h-16 z-50 bg-transparent flex place-content-center'>
+    <header id='navbar' className={'fixed top-0 left-0 right-0 h-16 z-50 flex place-content-center ' + navbarColor}>
       <nav className='container mx-auto px-6 flex flex-row justify-center md:justify-between align-center'>
         <div className='flex place-content-center'>
           <a href="#" className='text-white text-2xl font-bold my-auto decoration-yellow-300 hover:underline'>marcusrejinalgarcia</a>
