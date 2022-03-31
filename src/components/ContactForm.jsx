@@ -3,9 +3,6 @@ import React, { useState, useRef } from 'react'
 
 const ContactForm = () => {
   const formRef = useRef();
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
   const [isSent, setIsSent] = useState(false);
 
   const handleSubmit = (e) => {
@@ -40,7 +37,6 @@ const ContactForm = () => {
           name="name"
           id="name"
           className='text-black'
-          onChange={(e) => setName(e.target.value)}
           required
 
         />
@@ -52,7 +48,6 @@ const ContactForm = () => {
           name="email"
           id="email"
           className='text-black'
-          onChange={(e) => setEmail(e.target.value)}
           required
         />
       </div>
@@ -63,7 +58,6 @@ const ContactForm = () => {
           id="message"
           rows="6"
           className='text-black'
-          onChange={(e) => setMessage(e.target.value)}
           required
         ></textarea>
       </div>
