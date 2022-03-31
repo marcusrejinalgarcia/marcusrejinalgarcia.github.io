@@ -17,7 +17,6 @@ const NavItem = ({ children }) => {
           rounded-md
           text-white 
           hover:bg-gray-500 
-
           font-semibold
           capitalize
         ' 

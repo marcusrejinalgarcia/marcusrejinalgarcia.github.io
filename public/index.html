@@ -39,5 +39,17 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <script type="text/javascript">
+      function configureAhoy() {
+        ahoy.configure({
+          visitsUrl: "https://usebasin.com/ahoy/visits",
+          eventsUrl: "https://usebasin.com/ahoy/events",
+          page: "aa1c16af8e06" /* Use your form id here */
+        });
+        ahoy.trackView();
+        ahoy.trackSubmits();
+      }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/ahoy.js@0.3.4/dist/ahoy.min.js" async defer onload="configureAhoy()"></script>
   </body>
 </html>

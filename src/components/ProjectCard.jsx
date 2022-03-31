@@ -56,9 +56,9 @@ const TechTag = ({ tech }) => {
   }
 
   return (
-    <a href='#' className={`inline-block py-1 px-2 rounded-full text-xs font-semibold ${bgColor} ${textColor}`}>
+    <p className={`inline-block py-1 px-2 rounded-full text-xs font-semibold ${bgColor} ${textColor}`}>
       {tech}
-    </a>
+    </p>
   )
 }
 
